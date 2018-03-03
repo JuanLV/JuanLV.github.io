@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    background: #eeeeee;
+    font-family: 'Roboto', sans-serif;
+    height:100%;
+}
+.container{
+    max-width:960px;
+    margin: 0 auto;
+    height:100%;
+    width:100%;
+    display:table;
+}
+/* Logo */
+.logo{
+    width:100%;
+    height:150px;
+    margin: 0 auto;
+    background: url(../images/logo2.png) no-repeat center;
+}
+/* Izvēlne */
+.menu {
+    background: #492921;
+    font-size:0.875em;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.menu ul {
+    list-style-type: none;
+    text-align:center;
+}
+.menu li {
+    display:inline-block;
+}
+.menu .active {
+    background: #3e231c;
+}
+.menu a{
+    display:block;
+    padding:20px;
+    color:white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+.menu a:hover{
+    background: #674226;
+}
+.menu li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+    background: #492921;
+}
+.menu li:hover ul {
+    display: block;
+}
+.menu li ul li {
+    display: block;
+}
+/* Header */
+header{
+    height:250px;
+    padding:20px;
+    background: url(../images/coffee.jpg) no-repeat;
+    background-size:cover;
+    border-bottom:5px solid #492921;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+header h1{
+    font-size:1.625em;
+    color:white;
+    text-align:center;
+    margin-top:80px;
+}
+header p{
+    color:whitesmoke;
+    text-align:center;
+    font-size:0.875em;
+    margin-top:5px;
+}
+/* Main */
+.main{
+    width:60%;
+    background: #e4e9dc;
+    padding:5%;
+}
+.main p{
+    color:#3b3b3b;
+    font-size:1em;
+    margin-bottom:20px;
+}
+.main p a{
+    text-decoration:none;
+    color: blue;
+}
+.main h1{
+    font-size:1.3em;
+    color:#492921;
+    margin-bottom:20px;
+}
+/* Foto Galerijas */
+.main .photo ul img {
+    width:230px;
+    height:180px;
+    margin: 15px auto;
+}
+.main .photo ul li {
+    display: inline-block;
+}
+.shop {
+    width:100%;
+}
+/* Aptauja */
+.main form p{
+    margin-top:15px;
+    color: #492921;
+    font-weight: bold;
+}
+.main form input[type=submit] {
+    margin-top:15px;
+    padding:10px;
+    width:100%;
+    background: #492921;
+    color:white;
+    cursor: pointer;
+}
+.main form input[type=radio] {
+    transform: scale(1.25);
+    margin-bottom:5px;
+}
+.main form textarea{
+    padding:10px;
+    height:100px;
+    width:100%;
+    resize: none;
+    border: 1px solid rgba(73, 41, 33, 0.51);
+    border-radius:3px;
+}
+.main form select{
+    width:50%;
+    padding:5px;
+    border:none;
+    color: #492921;
+}
+/* Kolonnas */
+.col-container{
+    display:table;
+}
+.left p {
+    color:#3b3b3b;
+    font-size:0.85em;
+    text-align:left;
+}
+.right p{
+    color:#3b3b3b;
+    font-size:1em;
+    text-align:center;
+}
+.left h1, .right h1{
+    font-size:1.15em;
+    color:#492921;
+    margin-bottom:20px;
+    margin-top:20px;
+    text-align:center;
+}
+.right, .left{
+    width:20%;
+    padding:2%;
+    background: #dde2d5;
+    text-align:center;
+}
+.main, .left, .right{
+    display: table-cell;
+}
+/* Soc.tīkli */
+
+.left ul li {
+    display: block;
+    width: 50px;
+    margin: 35px auto 10px auto;
+}
+
+/* Kafijas */
+
+.right ul li {
+    display: block;
+    background-color: #D4AF7F;
+    width: auto;
+    max-width:125px;
+    border-radius: 50%;
+    border: 5px solid #DBDBDB;
+    margin: 20px auto 10px auto;
+}
+.right img{
+    width: 80px;
+    height:80px;
+    margin: 15px auto;
+}
+
+/* Footer */
+footer{
+    clear:both;
+    padding:25px;
+    background: #42241f;
+}
+footer p{
+    font-size:0.875em;
+    color:white;
+    text-align:center;
+}
+
+/* Priekš telefoniem */
+@media screen and (max-width : 720px) {
+    .main, .left, .right{
+        width:100%;
+        display:block;
+    }
+    .menu {
+        border-radius:0;
+    }
+}
+
